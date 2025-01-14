@@ -49,7 +49,8 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
         OutlinedTextField(value = "", onValueChange = {}, modifier = Modifier.fillMaxWidth())
         Text("Comentario")
         OutlinedTextField(value = "", onValueChange = {}, modifier = Modifier.fillMaxWidth().height(150.dp), singleLine = false, maxLines = 4)
-        Button(onClick = {}) {
+        Button(onClick = {}, modifier = Modifier.align(
+            Alignment.CenterHorizontally)) {
             Text("Enviar")
         }
     }
